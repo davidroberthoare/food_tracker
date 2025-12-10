@@ -30,6 +30,7 @@ function getJsonInput() {
 // Function to process AI text and get food analysis
 function processAI($text, $apiKey) {
     $today = date('Y-m-d');
+    // $url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=$apiKey";
     $url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=$apiKey";
 
     $prompt = "
